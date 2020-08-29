@@ -1,0 +1,80 @@
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Smartphones"
+}
+###
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Cama,Mesa e Banho"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Utilitarios"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Perifericos"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Hardwares"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Notebooks"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Todos"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Eletroeletronicos"
+}
+###
+
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Games"
+}
+###
+POST http://localhost:3000/category/create
+Content-type: application/json
+
+{
+    "name": "Monitores"
+}
+
+###
+
+GET http://localhost:3000/category

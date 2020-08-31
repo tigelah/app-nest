@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     entrypoint: dockerize -wait tcp://elasticsearch:9200 -timeout 100s -wait http://keycloak:8080 -timeout 100s npm run start:prod
-    container_name: micro-api-app
+    container_name: nest-app
     environment:
       - CHOKIDAR_USEPOLLING=true
       - APP_ENV=prod

@@ -38,3 +38,5 @@ lerna-debug.log*
 .docker/dbdata
 .history
 .idea
+media/
+.docker/redisdata

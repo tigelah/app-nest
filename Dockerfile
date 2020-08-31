@@ -1,14 +1,13 @@
 FROM node:12.14.0-alpine3.11
 
-WORKDIR /app
+RUN apk add --no-cache bash git
 
-COPY ./package.json ./
+RUN touch /home/node/.bashrc | echo "PS1='\w\$ '" >> /home/node/.bashrc
 
-RUN npm install
+RUN npm config set cache /home/node/app/.npm-cache --global
 
-COPY . .
+RUN npm i -g @nestjs/cli@7.4.1
 
-RUN npm run build
-# EXPOSE 3000
-CMD ["npm", "run", "start:prod"]
+USER node
 
+WORKDIR /home/node/app
